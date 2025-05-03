@@ -188,6 +188,7 @@ api.add_resource(ModelProviderListApi, "/workspaces/current/model-providers")
 
 api.add_resource(ModelProviderCredentialApi, "/workspaces/current/model-providers/<path:provider>/credentials")
 api.add_resource(ModelProviderValidateApi, "/workspaces/current/model-providers/<path:provider>/credentials/validate")
+# [note] 保存类似 Deepseek-Chat 的模型配置接口
 api.add_resource(ModelProviderApi, "/workspaces/current/model-providers/<path:provider>")
 
 api.add_resource(
