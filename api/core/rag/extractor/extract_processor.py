@@ -88,6 +88,7 @@ class ExtractProcessor:
             else:
                 return cls.extract(extract_setting=extract_setting, file_path=file_path)
 
+    # [note] 解析上传知识库文件内容
     @classmethod
     def extract(
         cls, extract_setting: ExtractSetting, is_automatic: bool = False, file_path: Optional[str] = None
