@@ -42,6 +42,7 @@ class ParagraphIndexProcessor(BaseIndexProcessor):
         # Split the text documents into nodes.
         if not rules.segmentation:
             raise ValueError("No segmentation found in rules.")
+        # 初始化分词器
         splitter = self._get_splitter(
             processing_rule_mode=process_rule.get("mode"),
             max_tokens=rules.segmentation.max_tokens,
