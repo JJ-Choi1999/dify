@@ -388,6 +388,7 @@ class DatasetQueryApi(Resource):
 
 
 class DatasetIndexingEstimateApi(Resource):
+    # [note] 分词预览
     @setup_required
     @login_required
     @account_initialization_required
