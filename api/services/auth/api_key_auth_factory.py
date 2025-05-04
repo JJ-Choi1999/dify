@@ -10,6 +10,7 @@ class ApiKeyAuthFactory:
     def validate_credentials(self):
         return self.auth.validate_credentials()
 
+    # [note] 判断爬虫 API 是否正常
     @staticmethod
     def get_apikey_auth_factory(provider: str) -> type[ApiKeyAuthBase]:
         match provider:
