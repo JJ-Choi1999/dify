@@ -146,6 +146,7 @@ class ExtractProcessor:
                         # txt
                         extractor = TextExtractor(file_path, autodetect_encoding=True)
                 else:
+                    # [note] 不同文件的解析方式
                     if file_extension in {".xlsx", ".xls"}:
                         extractor = ExcelExtractor(file_path)
                     elif file_extension == ".pdf":
